@@ -34,7 +34,7 @@ export async function createUser({apiMappings = null}) {
     const users = db.collection("users");
     const userId = await counter(db);
     const {uniqueIdentifier,email, firstName, lastName} = await getRandomKeyUserDetails(userId);
-    const mobileNumber = (971500000000 + userId).toString();
+    const mobileNumber = (919000000000 + userId).toString();
 
 
     const user = {
