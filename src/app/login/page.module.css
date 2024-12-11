@@ -1,0 +1,32 @@
+/*centered container*/
+.container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container h1:not(:first-child) {
+    margin-top: 1em;
+}
+
+.loginForm {
+    display: grid;
+    grid-auto-flow: row;
+    width: 300px;
+}
+
+.mobileInput {
+    width: 100%
+}
+
+.loginButton {
+    width: 100%
+}
+
+.registerLink {
+    width: 100%
+}

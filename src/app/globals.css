@@ -1,0 +1,44 @@
+:root {
+    --app-primary-accent: #2196F3;
+    --app-primary-accent-rgb: 33, 150, 243;
+
+    --app-secondary-accent: #4CAF50;
+    --app-secondary-accent-rgb: 76, 175, 80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+input[type="text"] {
+    font-size: 1.2em;
+    padding: 0.2em;
+    margin: 0.2em;
+    font-family: inherit;
+}
+
+button, input[type="button"], input[type="submit"] {
+    font-size: 1.3em;
+    padding: 0.2em;
+    margin:0.2em;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: white;
+    border: 1px solid var(--app-primary-accent);
+}
+
+button.primary {
+    background-color: var(--app-primary-accent);
+    color:white;
+    border-color: rgba(var(--app-primary-accent-rgb), 0.5);
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: rgba(var(--app-primary-accent-rgb), 0.5);
+}

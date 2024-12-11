@@ -1,0 +1,52 @@
+.api {
+    margin-left: 3em;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1em;
+    flex-wrap: wrap;
+    /*grid-auto-flow: dense;*/
+    /*place-items: baseline;*/
+    /*gap: 1em;*/
+    /*justify-content: start;*/
+}
+
+.apiTitle {
+    margin-bottom: 0;
+    margin-top: 0.8em;
+}
+
+.apiPath {
+    font-family: monospace;
+    margin-bottom: 0.8em;
+    margin-top: 0.5em;
+    color: gray;
+}
+
+.apiPath:empty{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .api {
+        margin-left: 0;
+    }
+
+    .titleContainer {
+        /*grid-template-columns: 1fr;*/
+        gap: 0.2em;
+    }
+
+    .apiTitle {
+        margin-bottom: 0;
+        margin-top: 0.3em;
+        font-size: 1.1em;
+    }
+
+    .apiPath {
+        margin-top: 0;
+    }
+}

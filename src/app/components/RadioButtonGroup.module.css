@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Container styling for the dropdown list */
+.dropdownList {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General button styling */
+.addButton,
+.saveButton,
+.deleteButton {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.addButton {
+    background-color: #007bff;
+    color: white;
+}
+
+.saveButton {
+    background-color: #28a745;
+    color: white;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.addButton:hover,
+.saveButton:hover,
+.deleteButton:hover {
+    transform: scale(1.05);
+}
+
+.addButton:active,
+.saveButton:active,
+.deleteButton:active {
+    transform: scale(1);
+}
+
+/* Item container styling */
+.item {
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Dropdown styling */
+.dropdown {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.dropdown:focus {
+    border-color: #007bff;
+}
+
+/* Input field styling */
+.textInput {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.textInput:focus {
+    border-color: #007bff;
+}
+
+/* Labels and spacing */
+.item label,
+.item select,
+.item input {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.item div {
+    margin-bottom: 10px;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .dropdownList {
+        padding: 15px;
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    .addButton,
+    .saveButton,
+    .deleteButton {
+        width: 100%;
+        text-align: center;
+    }
+}

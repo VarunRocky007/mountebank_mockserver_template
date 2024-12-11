@@ -1,0 +1,20 @@
+{
+  "servers": [
+    {
+      "name": "Sample Server",
+      "port": 4545,
+      "apis": [
+        {
+          "name": "sample_api_unique_name",
+          "display_name": "Sample API Display Name",
+          "responses": {
+            "real" : "Real",
+            "sucess": "Success",
+            "failure": "Failure"
+          },
+          "path": "/path/to/mountebank/api"
+        }
+      ]
+    }
+  ]
+}

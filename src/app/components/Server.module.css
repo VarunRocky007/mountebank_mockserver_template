@@ -1,0 +1,19 @@
+.container {
+}
+
+.title {
+  margin-bottom: 0;
+  margin-top: 0.5em;
+
+  color: var(--app-primary-accent);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+
+    background-color: var(--app-primary-accent);
+    color: white;
+    text-align: center;
+  }
+}
